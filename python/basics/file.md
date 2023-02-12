@@ -150,11 +150,13 @@ for line in lines:
 # Final Spark
 for line in lines:
     print(line, end='')
-``` Illumination
+```
+``` 
+Illumination
 Light Binding
 Prismatic Barrier
 Lucent Singularity
-Final Spark```>>>
+Final Spark $
 ```
 
 각 줄에 줄바꿈(`\n`)문자가 있으므로 `print()`함수에 `end`인자를 주어 줄바꿈을 없앨 수 있다.
