@@ -1,2 +1,8 @@
 # StudyNote
-Programming study note
+
+1. Programming Language
+  - Clang
+  - Java
+  - Python
+  - Go
+  - Kotlin 
