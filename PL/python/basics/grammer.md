@@ -4,7 +4,7 @@
 
 - 출력
 
-    ```
+    ```py
     a = 123
     print(a) # 123
 
@@ -39,11 +39,11 @@
 
 - 입력
 
-    ```
+    ```py
     input("프롬프트 문자열")
     ```
 
-    ```
+    ```py
     a = input()
     a = input("숫자를 입력하세요: ")
     ```
@@ -77,7 +77,7 @@
 
 - 파이썬에서는 자료형을 따로 선언하지 않으며, 묵시적으로 값에 따라서 자료형 결정
 
-    ```
+    ```py
     value = 3              # 정수
     value = 0o177          # 8진수
     value = 0x8ff          # 16진수
@@ -88,7 +88,7 @@
 
     - 데이터 타입
 
-        ```
+        ```py
         int, float, complex     # 숫자
         str, list, tuple        # 시퀀스
         set                     # 집합
@@ -99,13 +99,13 @@
 
 - 다른 언어와 달리 따로 상수형이 없음
 
-    ```
+    ```py
     MAX_SIZE = 100         # 값이 변경되지 않음을 전제
     ```
 
 - 자료형 변환
 
-    ```
+    ```py
     int("문자열")       # 문자열을 int형으로 변환
     float("문자열")     # 문자열을 float형으로 변환
     str(숫자)           # 숫자를 문자열로 변환
@@ -130,13 +130,13 @@ is, is not              # 객체 비교 연산자
 
 - 1차원 리스트
 
-    ```
+    ```py
     list1 = ['항목1', '항목2', '항목3']
     ```
 
 - 2차원 리스트
 
-    ```
+    ```py
     list2 = [
             [ 1, 2, 3 ],
             [ 4, 5, 6 ],
@@ -146,7 +146,7 @@ is, is not              # 객체 비교 연산자
 
 - 2차원 동적 생성
 
-    ```
+    ```py
     rows = 3
     cols = 5
 
@@ -160,7 +160,7 @@ is, is not              # 객체 비교 연산자
 
 - 리스트 연산
 
-    ```
+    ```py
     list[index]                                # 리스트 특정 위치의 요소
     list[index] = 값                           # 리스트 특정위치의 요소 내용 변경
     list.appand(요소)                           # 리스트 맨 뒤에 요소 추가
@@ -178,7 +178,7 @@ is, is not              # 객체 비교 연산자
 
 ## 튜플 자료형
 
-```
+``` 
 tuple1 = ( 항목1, 항목2, 항목3 )
 ```
 
@@ -236,7 +236,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
 
 - 예시
 
-    ```
+    ```py
     if 1 in [1, 2, 3]: // true
         print("true")
 
@@ -283,7 +283,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
 
     - range([start,] stop[, step]) # start부터 stop-1까지 step의 간격으로 정수들 생성
 
-        ```
+        ```py
         for i in range(10): # 0 ~ 9
             print(i)
 
@@ -293,7 +293,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
 
     - 응용: 튜플 리스트
 
-        ```
+        ```py
         a = [(1,2), (3,4), (5,6)]
         for (first, last) in a:
             print(first, last)
@@ -305,13 +305,13 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
         [표현식 for 항목 in 반복가능객체 if 조건문]
         ```
 
-        ```
+        ```py
         a = [1, 2, 3, 4]
         b = [num * 3 for num in a]
         print(result) # [3, 6, 9, 12]
         ```
 
-        ```
+        ```py
         result = [x*y for x in range(2, 10)
                       for y in range(1, 10)] # 구구단의 모든 결과를 리스트에 저장
         print(result) 2, 4, 6, 8, ...
@@ -361,7 +361,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
         ...
     ```
 
-    ```
+    ```py
     def add_many(*args):
         result = 0;
         for i in args:
@@ -374,7 +374,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
 
 - 키워드 매개변수
 
-    ```
+    ```py
     def print_kwargs(**kwargs):
         print(kwargs)
 
@@ -386,14 +386,14 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
 
 - 여러 리턴값
 
-    ```
+    ```py
     def add_and_mul(a, b):
         return a+b, a*b
     ```
 
 - 함수 안에서 함수 밖의 변수값 변경
 
-    ```
+    ```py
     a = 1
 
     def update(a):
@@ -416,7 +416,7 @@ dictionary1 = { 키1 : 값1, 키2: 값2, 키3 : 값3 }
     함수명 = lambda 매개변수1, 매개변수2, ... : 매개변수를 이용한 표현식
     ```
 
-    ```
+    ```py
     add = lambda a, b: a + b
     result = add(3, 4)
     print(result) # 7
